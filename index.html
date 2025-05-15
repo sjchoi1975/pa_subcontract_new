@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>재위탁 관계도</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header style="position:relative;">
+        <h1>재위탁 계약 관계도</h1>
+        <!-- 검색 UI 영역 -->
+        <div id="search-area" style="position:absolute; left:50%; transform:translateX(-50%); top:32px; width:500px; z-index:10; background:transparent;">
+            <form id="company-search-form" style="display:flex; flex-direction:column; align-items:center; gap:4px; width:100%;">
+                <div style="display:flex; width:100%; gap:0;">
+                    <input id="company-search-input" type="text" placeholder="업체명, 사업자등록번호, 대표자명을 입력해주세요." style="flex:1; padding:6px; font-size:1em; border:1px solid #aaa; border-radius:0;" autocomplete="off" />
+                    <button id="company-search-btn" type="submit" style="padding:6px 16px; font-size:1em; border-radius:0; border:1px solid #1976d2; background:#1976d2; color:white; cursor:pointer;">검색</button>
+                </div>
+                <ul id="company-search-suggestions" style="width:100%; background:white; border:1px solid #ddd; border-radius:4px; margin:0; padding:0; list-style:none; max-height:180px; overflow-y:auto; display:none; position:relative; z-index:100;"></ul>
+            </form>
+        </div>
+        <!-- 로그인/로그아웃, 사용자 정보 표시 영역 (추후 구현) -->
+        <div id="user-session-controls">
+            <!-- 로그인 폼 또는 사용자 정보가 여기에 표시됩니다. -->
+        </div>
+    </header>
+
+    <main>
+        <div id="controls">
+            <!-- 각종 제어 버튼, 정보 필터 등 (추후 구현) -->
+        </div>
+
+        <div id="visualization-container">
+            <!-- D3.js 관계도가 그려질 SVG 요소가 여기에 추가됩니다 -->
+        </div>
+
+        <aside id="details-panel">
+            <!-- <h3>업체 상세 정보</h3> -->
+            <!-- 노드 클릭 시 상세 정보 표시 영역 (추후 구현) -->
+            <div id="company-details">
+                <p></p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PARMPLE</p>
+    </footer>
+
+    <!-- D3.js 라이브러리 (CDN) -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- Supabase JS Client 라이브러리 (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <!-- 위 버전은 최신으로 변경될 수 있으니 Supabase 공식 문서 참조 -->
+
+    <!-- Supabase 클라이언트 초기화 및 사용자 정의 함수 -->
+    <script src="js/supabaseClient.js"></script> 
+    <!-- 메인 JavaScript 파일 -->
+    <script src="js/main.js"></script>
+</body>
+</html> 

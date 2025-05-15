@@ -1,0 +1,85 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #fff;
+    padding-top: 1.0em;
+    padding-bottom: 1.0em;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+    flex-grow: 1;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    padding: 0.2em 1em;
+    min-height: 0;
+}
+
+#visualization-container {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    margin-right: 1em;
+    min-height: 0;
+    /* SVG 요소가 이 안에서 크기를 차지하도록 설정 필요 */
+}
+
+#details-panel {
+    width: 300px; /* 상세 정보 패널 너비 */
+    border: 1px solid #ccc;
+    padding: 1em;
+    background-color: #f9f9f9;
+}
+
+/* 로그인 폼 스타일 (간단 예시) */
+#login-form {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+#login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#login-form input {
+    width: calc(100% - 12px);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#user-session-controls {
+    /* 기존 스타일이 있다면 여기에 명시적으로 초기화 또는 수정 */
+    /* 예: margin: 0; padding: 0; */
+}
+
+#user-info {
+    padding: 10px;
+    background-color: #fff;
+    text-align: right;
+}
+
+footer {
+    background-color: #fff;
+    padding: 0.2em 1em;
+    text-align: center;
+}
+
+/* 추가적인 스타일링 ... */ 
